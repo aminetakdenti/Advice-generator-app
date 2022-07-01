@@ -1,0 +1,86 @@
+/*! ------------------------- Start Globale Variables ------------------------ */
+:root {
+  /** ### Primary */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  /** ### Neutral */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+/*! -------------------------- End Globale Variables ------------------------- */
+
+/*! --------------------------- Start Globale Rules -------------------------- */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--dark-blue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*! ---------------------------- End Globale Rules --------------------------- */
+
+/*!-------------------------- Start Advice Ssection ------------------------- */
+.slip {
+  max-width: fit-content;
+  margin: auto 15px;
+  background-color: var(--dark-grayish-blue);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px 0px hsl(218deg 26% 10% / 80);
+  width: 500px;
+}
+@media (max-width: 500px) {
+  .slip {
+    width: 350px;
+  }
+}
+.slip .content {
+  text-align: center;
+  margin: 20px auto 30px;
+}
+.slip .content .advice-id {
+  font-weight: 100;
+  color: var(--neon-green);
+}
+.slip .content .quote {
+  font-weight: 800;
+  font-size: 28px;
+  display: block;
+  color: var(--light-cyan);
+  position: relative;
+}
+.slip .image img {
+  display: block;
+  margin: auto auto 30px;
+  content: url(/images/pattern-divider-desktop.svg);
+}
+@media (max-width: 500px) {
+  .slip .image img {
+    content: url(/images/pattern-divider-mobile.svg);
+  }
+}
+.slip .dice {
+  border: none;
+  background-color: var(--neon-green);
+  height: 50px;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+.slip .dice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 25px 0px var(--neon-green);
+}
+/*! --------------------------- End Advice Ssection -------------------------- */
