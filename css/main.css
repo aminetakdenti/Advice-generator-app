@@ -59,11 +59,11 @@ body {
 .slip .image img {
   display: block;
   margin: auto auto 30px;
-  content: url(/images/pattern-divider-desktop.svg);
+  content: url(./images/pattern-divider-desktop.svg);
 }
 @media (max-width: 500px) {
   .slip .image img {
-    content: url(/images/pattern-divider-mobile.svg);
+    content: url(./images/pattern-divider-mobile.svg);
   }
 }
 .slip .dice {
